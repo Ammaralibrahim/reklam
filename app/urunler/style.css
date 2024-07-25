@@ -1,0 +1,26 @@
+/* Genel scrollbar ayarları */
+.scrollable-content {
+  max-height: calc(100vh - 100px); /* Kategoriler alanı için max yükseklik */
+  overflow-y: auto; /* Dikey kaydırma çubuğunu aktif hale getirir */
+}
+
+/* Scrollbar genişliği ve rengi */
+.scrollable-content::-webkit-scrollbar {
+  width: 4px; /* Scrollbar genişliği */
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar arka plan rengi */
+  border-radius: 10px; /* Köşeleri yuvarlatır */
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar "kolu" rengi */
+  border-radius: 10px; /* Köşeleri yuvarlatır */
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Üzerine gelindiğinde renk değişir */
+}
+
+
